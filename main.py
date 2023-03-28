@@ -28,7 +28,7 @@ def xpshort(url):
     time.sleep(8)
     r = client.post(f"{DOMAIN}/links/go", data=data, headers=h)
     try:
-        return r.json()['url']
+        return redirect(r.json()['url'])
     except: 
         return "SomeThing went wrong"
 
