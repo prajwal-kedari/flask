@@ -32,6 +32,14 @@ def xpshort(url):
     except: 
         return "SomeThing went wrong"
 
+    
+ 
+@app.route("/test/<path:url>")
+def xpshor1t(url):
+    import time
+    import requests
+    from bs4 import BeautifulSoup 
+    return url
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
