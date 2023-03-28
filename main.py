@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify , redirect
 import os
 
 app = Flask(__name__)
@@ -39,7 +39,7 @@ def xpshor1t(url):
     import time
     import requests
     from bs4 import BeautifulSoup 
-    return url
+    redirect("https://www.youtube.com/")
 
 if __name__ == '__main__':
     app.run(debug=True, port=os.getenv("PORT", default=5000))
