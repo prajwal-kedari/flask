@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="d-flex align-items-center justify-content-center vh-100" >
+    <div class="card " style="width: 18rem;">
+        <div class="card-body">
+            <center>
+          <h5 class="card-title">XpShort By Prajwal</h5>
+          <input type="url" onchange="oc()" id="ID1" placeholder="Enter XpShort Link"></input>
+          <button class="btn btn-success" onclick="func()">Go somewhere</button>
+          <input type="checkbox" unchecked id="a1">OC</input></center>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script type="application/javascript" >
+var inLink = document.getElementById("ID1");
+var cheB = document.getElementById("a1");
+function func() {
+    window.open("https://flask-production-7c6e.up.railway.app/xpshort/"+inLink.value, '_blank'); 
+    inLink.value =" ";
+}
+function oc() {
+    // console.log(2222222)
+    if(document.getElementById("a1").checked){
+        func();
+    }
+}
+</script>
+
+</html>
