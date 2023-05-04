@@ -18,7 +18,7 @@ def xpshort(url):
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
-    ref = "https://blog.finsurances.co/"
+    ref = "https://go.finsurances.co/"
     #ref = "https://www.jankarihoga.com/"
     h = {"referer": ref}
     resp = client.get(final_url,headers=h)
